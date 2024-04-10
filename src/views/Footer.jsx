@@ -30,7 +30,7 @@ const Footer = () => {
         </div> */}
           <FormContact />
         <div className="mr-6">
-          <iframe width="100%" height="380"  src="http://maps.google.com/maps?q=-6.203022691987594, 106.90285768861878&z=15&output=embed"></iframe>
+          <iframe width="100%" height="380"  src="https://maps.google.com/maps?q=-6.203022691987594, 106.90285768861878&z=15&output=embed"></iframe>
         </div>
         {/* <div>
           <h3 className="text-md font-semibold mb-4">Community</h3>
