@@ -6,8 +6,8 @@ import FormContact from "../components/FormContact";
 const Footer = () => {
   return (
     <footer className="mt-20 dark:border-t py-10 dark:border-neutral-900 bg-neutral-900">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 mt-4">
-        <div className="w-[80%] ml-10">
+      <div className="flex flex-wrap justify-center lg:grid grid-cols-3 gap-3 mt-4">
+        <div className="w-[80%] lg:ml-10 px-4 py-2">
           <img className="h-[6rem] w-[12rem] ml-3" src={logo} alt="Logo" />
           <h3 className="lg:text-2xl mb-4 mt-2 text-white">PT BERKAH INDO RATAMA </h3>
           <h3 className="lg:text-lg mb-6 mt-4 leading-relaxed text-justify text-white">Jl. Jatinegara Kaum No 8A Kelurahan Jatinegara Kaum Kecamatan Pulo Gadung Jakarta Timur 13250.</h3>
@@ -28,8 +28,10 @@ const Footer = () => {
           <h3 className="text-lg mb-4 mt-4">PT BERKAH INDO RATAMA </h3>
           <h3 className="text-md mb-4 mt-4">Jl. Jatinegara Kaum No 8A Kelurahan Jatinegara Kaum Kecamatan Pulo Gadung Jakarta Timur 13250.</h3>
         </div> */}
+        <div className="w-[80%] lg:w-[90%]">
           <FormContact />
-        <div className="mr-6">
+        </div>
+        <div className="lg:mr-8">
           <iframe width="100%" height="380"  src="https://maps.google.com/maps?q=-6.203022691987594, 106.90285768861878&z=15&output=embed"></iframe>
         </div>
         {/* <div>
@@ -48,7 +50,7 @@ const Footer = () => {
           </ul>
         </div> */}
       </div>
-      <div className="mt-[4rem] text-center dark:text-neutral-300 hover:text-white text-white">
+      <div className="mt-[4rem] px-6 text-center dark:text-neutral-300 hover:text-white text-white text-xs lg:text-sm">
           © Copyright 2024 PT.BERKAH INDO PRATAMA - All Rights Reserved
           {/* <a href="https://tw-elements.com/">TW Elements</a> */}
       </div>

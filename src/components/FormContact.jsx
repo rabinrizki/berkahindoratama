@@ -3,20 +3,20 @@ const FormContact = () => {
         <div className="flex flex-col">
           <h3 className="text-lg mb-4 mt-2 lg:ml-8 text-white">Contact Us</h3>
             <div className="mb-12 w-full lg:px-8">
-                <form className=" w-full">
+                <form className="w-full">
                     <div className="relative mb-6" data-te-input-wrapper-init>
                         <input type="text"
-                        className="peer block min-h-[auto] w-full rounded border-2 bg-white py-[0.32rem] "
+                        className="min-h-[auto] w-full rounded border-2 bg-white py-[0.32rem] "
                         id="exampleInput90" placeholder="Name" />
                     </div>
                     <div className="relative mb-6" data-te-input-wrapper-init>
                         <input type="email"
-                        className="peer block min-h-[auto] w-full rounded border-2 bg-white py-[0.32rem] "
+                        className="min-h-[auto] w-full rounded border-2 bg-white py-[0.32rem] "
                         id="exampleInput91" placeholder="Email address" />
                     </div>
                     <div className="relative mb-6" data-te-input-wrapper-init>
                         <textarea
-                        className="peer block min-h-[auto] w-full rounded border-2 bg-white py-[0.32rem] "
+                        className="min-h-[auto] w-full rounded border-2 bg-white py-[0.32rem] "
                         id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
                     </div>
                     {/* <div className="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
