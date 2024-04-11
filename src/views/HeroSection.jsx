@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import vid1 from "../assets/vid1.mp4";
 import vid2 from "../assets/vid2.mp4";
 
@@ -21,11 +20,11 @@ const HeroSection = () => {
         <a
           href="https://api.whatsapp.com/send?phone=6287761514684"
           target="_blank"
-          className="bg-gradient-to-r from-[#fb0103] to-orange-800 py-3 px-4 mx-3 rounded-md text-white dark:text-white"
+          className="bg-gradient-to-r from-[#fb0103] to-orange-800 py-3 px-4 mx-3 rounded-md text-white dark:text-white text-sm"
         >
           Konsultasi
         </a>
-        <a href="src\assets\file\COMPRO PT Berkah Indo Ratama.pdf" target="_blank" className="py-3 px-4 mx-3 rounded-md border bg-black text-white dark:text-white">
+        <a href="src\assets\file\COMPRO PT Berkah Indo Ratama.pdf" target="_blank" className="py-3 px-4 mx-3 rounded-md border bg-black text-white dark:text-white text-sm">
           Company Profile
         </a>
       </div>
