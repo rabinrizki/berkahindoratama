@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+// import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 import Hamburger from 'hamburger-react'
 import DarkMode from "../components/ToggleDarkMode";
 
-const Navbar = ({ref}) => {
+const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(true);
   const [dark, setDark] = useState(false)
   const [ligth, setLigth] = useState(false)
@@ -41,12 +41,7 @@ const Navbar = ({ref}) => {
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
-              // <li key={index}>
-              //   <button onClick={()=> handleClick(item.href)}>{item.label}</button>
-              //   {/* <FeatureSection ref={ref}/> */}
-              //   {/* {ref && <FeatureSection ref={ref}/>} */}
-              // </li>
-              <Link activeClass="active" smooth spy to={item.href}>
+              <Link key={index} activeClass="active" smooth spy to={item.href}>
                 <button className="hover:text-[#fb0103] text-black dark:text-white">{item.label}</button>
               </Link>
             ))}
@@ -90,7 +85,7 @@ const Navbar = ({ref}) => {
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             {/* <ul> */}
               {navItems.map((item, index) => (
-                <Link className="py-4 hover:text-[#fb0103] text-white" activeClass="active" smooth spy to={item.href}>
+                <Link key={index} className="py-4 hover:text-[#fb0103] text-white" activeClass="active" smooth spy to={item.href}>
                   <button>{item.label}</button>
                 </Link>
               ))}

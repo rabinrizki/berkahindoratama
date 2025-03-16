@@ -3,8 +3,8 @@ import HeroSection from "./views/HeroSection";
 import LayananSection from "./views/LayananSection";
 import Client from "./views/Client";
 import Footer from "./views/Footer";
-import Pricing from "./views/Pricing";
-import Testimonials from "./views/Testimonials";
+// import Pricing from "./views/Pricing";
+// import Testimonials from "./views/Testimonials";
 import TentangKami from "./views/TentangKami";
 import Keunggulan from "./views/Keunggulan";
 import WhatsappButton from "./components/ButtonWa";
@@ -20,8 +20,8 @@ const App = () => {
           <Keunggulan />
           <LayananSection />
           <Client />
-          <Pricing />
-          <Testimonials />
+          {/* <Pricing /> */}
+          {/* <Testimonials /> */}
         </div>
       <Footer />
       </div>

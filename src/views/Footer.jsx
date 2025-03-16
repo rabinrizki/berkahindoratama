@@ -1,7 +1,7 @@
 import { resourcesLinks, platformLinks, communityLinks } from "../constants";
 import  logo  from "../assets/logo.png"
 import Map from "../helpers/Maps";
-import FormContact from "../components/FormContact";
+// import FormContact from "../components/FormContact";
 
 const Footer = () => {
   return (
@@ -15,12 +15,12 @@ const Footer = () => {
             <tr className="mb-12">
                 <td>Phone</td>
                 <td>:</td>
-                <td>+62 877-6151-4684</td>
+                <td>+62 813-8068-5068</td>
             </tr>
             <tr>
                 <td>Email</td>
                 <td>:</td>
-                <td>cutfarin17@gmail.com</td>
+                <td>Tezdjo.mbbs@gmail.com</td>
             </tr>
           </table>
         </div>
@@ -28,9 +28,9 @@ const Footer = () => {
           <h3 className="text-lg mb-4 mt-4">PT BERKAH INDO RATAMA </h3>
           <h3 className="text-md mb-4 mt-4">Jl. Jatinegara Kaum No 8A Kelurahan Jatinegara Kaum Kecamatan Pulo Gadung Jakarta Timur 13250.</h3>
         </div> */}
-        <div className="w-[80%] lg:w-[90%]">
+        {/* <div className="w-[80%] lg:w-[90%]">
           <FormContact />
-        </div>
+        </div> */}
         <div className="lg:mr-8">
           <iframe width="100%" height="380"  src="https://maps.google.com/maps?q=-6.203022691987594, 106.90285768861878&z=15&output=embed"></iframe>
         </div>

@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import codeImg from "../assets/code.jpg";
+// import codeImg from "../assets/code.jpg";
 import  bukti  from "../assets/file/bukti.jpg"
 import { checklistItems } from "../constants";
 
