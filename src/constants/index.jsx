@@ -23,8 +23,8 @@ export const navItems = [
   { label: "Keunggulan", href: "keunggulan-section" },
   { label: "Layanan", href: "layanan-section" },
   { label: "Client", href: "client-section" },
-  { label: "Pricing", href: "pricing" },
-  { label: "Testimonials", href: "testimonial" },
+  // { label: "Pricing", href: "pricing" },
+  // { label: "Testimonials", href: "testimonial" },
 ];
 
 // export const testimonials = [
