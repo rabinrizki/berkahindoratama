@@ -1,25 +1,31 @@
-import React from 'react';
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+// import React from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import PropTypes from 'prop-types';
 
-const MapComponent = withScriptjs(
-  withGoogleMap(() => (
-    <GoogleMap defaultZoom={8} defaultCenter={{ lat: -34.397, lng: 150.644 }}>
-      <Marker position={{ lat: -34.397, lng: 150.644 }} />
-    </GoogleMap>
-  ))
-);
+const Maps = ({ center }) => {
+  const mapStyles = {
+    height: "50vh",
+    width: "100%"
+  };
 
-const Map = () => {
   return (
-    <div style={{ width: '100%', height: '400px' }}>
-      <MapComponent
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `100%` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-      />
-    </div>
+    <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+      <GoogleMap
+        mapContainerStyle={mapStyles}
+        zoom={13}
+        center={center}
+      >
+        <Marker position={center} />
+      </GoogleMap>
+    </LoadScript>
   );
 };
 
-export default Map;
+Maps.propTypes = {
+  center: PropTypes.shape({
+    lat: PropTypes.number.isRequired,
+    lng: PropTypes.number.isRequired
+  }).isRequired
+};
+
+export default Maps;

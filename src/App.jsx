@@ -7,7 +7,8 @@ import Footer from "./views/Footer";
 // import Testimonials from "./views/Testimonials";
 import TentangKami from "./views/TentangKami";
 import Keunggulan from "./views/Keunggulan";
-import WhatsappButton from "./components/ButtonWa";
+// import WhatsappButton from "./components/ButtonWa";
+import Whatsapp from "./views/WhatsApp";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Keunggulan />
           <LayananSection />
           <Client />
+          <Whatsapp/>
           {/* <Pricing /> */}
           {/* <Testimonials /> */}
         </div>
